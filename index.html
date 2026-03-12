@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IPL 2026 - A G Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+<div class="top-nav">
+
+<div class="bubble">
+<img src="https://exchange4media.gumlet.io/news-photo/115794-106595-IPLofficial1.jpg" class="ipl-logo">
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">FRONT PAGE</a></li>
+<li><a href="matches.html">MATCHES</a></li>
+<li><a href="pointtable.html">POINTS TABLE</a></li>
+<li><a href="teams.html">TEAMS</a></li>
+<li><a href="stats.html">STATS</a></li>
+</ul>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search team...">
+</div>
+
+</div>
+</header>
+
+<section class="hero-slider">
+
+<div class="hero-content">
+
+<span class="video-tag">VIDEO</span>
+
+<h1>Recapping a thrilling TATA IPL CEREMONY VIDEO OF 2026</h1>
+
+<p>17 Dec, 2025 | 01:46 mins</p>
+
+<div class="hero-buttons">
+
+<!-- Fixed YouTube Video -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vDag_pZuaoU?si=cYfTPE6mRrx8m86N" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+<div class="team-bubbles">
+
+<div class="bubble" data-team="RCB">
+<img src="https://print-on-click.in/media/catalog/product/cache/f02f741f8d4d0d4e5ad9a7a333007557/r/o/royal_challengers_bengaluru_sticker_1.jpg">
+</div>
+
+<div class="bubble" data-team="CSK">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMx-aQvP_fuMtV-VJj1XUuFv2wcGRYWYaMA&s">
+</div>
+
+<div class="bubble" data-team="MI">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbj632QnP0qYjkkT3fbICX6iUuJizowV6iQ&s">
+</div>
+
+<div class="bubble" data-team="RR">
+<img src="https://i.pinimg.com/736x/74/a1/f6/74a1f6520043dea5a6daded687bdb1a4.jpg">
+</div>
+
+<div class="bubble" data-team="GT">
+<img src="https://vectorseek.com/wp-content/uploads/2023/05/Gujarat-Titans-Logo-Vector.jpg">
+</div>
+
+<div class="bubble" data-team="DC">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7b4b5d80005305.5cd4462f4a056.jpg">
+</div>
+
+<div class="bubble" data-team="KKR">
+<img src="https://1000logos.net/wp-content/uploads/2024/03/Kolkata-Knight-Riders-Logo.jpg">
+</div>
+
+<div class="bubble" data-team="PBKS">
+<img src="https://i.pinimg.com/474x/2a/05/f9/2a05f90c408b90f0be8490f2c317a62c.jpg">
+</div>
+
+<div class="bubble" data-team="SRH">
+<img src="https://vectorseek.com/wp-content/uploads/2023/03/Sunrisers-Hyderabad-Logo-Vector.jpg">
+</div>
+
+<div class="bubble" data-team="LSG">
+<img src="https://1000logos.net/wp-content/uploads/2024/03/Lucknow-Super-Giants-Logo.jpg">
+</div>
+
+</div>
+</section>
+
+<section class="bottom-bar">
+<h3>Good Evening! Curated shorts for you</h3>
+</section>
+
+<script>
+
+
+// Team Bubble Click
+document.querySelectorAll(".bubble").forEach(function(team){
+
+team.addEventListener("click", function(){
+
+let teamName = this.getAttribute("data-team");
+
+if(teamName){
+alert("You clicked: " + teamName);
+}
+
+});
+
+});
+
+
+// Search Box Function
+document.getElementById("searchInput").addEventListener("keyup", function(){
+
+let value = this.value.toLowerCase();
+
+document.querySelectorAll(".team-bubbles .bubble").forEach(function(team){
+
+let name = team.getAttribute("data-team");
+
+if(name && name.toLowerCase().includes(value)){
+team.style.display = "inline-block";
+}
+else{
+team.style.display = "none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

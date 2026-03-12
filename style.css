@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1b3e; 
+    color: white;
+}
+
+.main-header {
+    background-color: #192c55;
+    padding: 10px 50px;
+    border-bottom: 2px solid yellow; 
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #ef4123;
+}
+
+.hero-slider {
+    height: 450px;
+    background-size: cover;
+    padding: 100px 80px;
+    position: relative;
+}
+
+.video-tag {
+    background-color: #ef4123;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.play-btn {
+    background-color: #ef4123;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.team-bubbles {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid yellow; 
+}
+
+.bubble img {
+    width: 40px;
+}
+
+.bottom-bar {
+    background-color: #0d1b3e;
+    padding: 20px 80px;
+    border-top: 1px solid #333;
+}

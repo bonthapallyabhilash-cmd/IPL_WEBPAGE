@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen IPL Points Table</title>
+    <Style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+    background: #fff;
+}
+
+.page-wrapper {
+    width: 100vw;   
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+}
+.header-container {
+    width: 100%;
+    height: 80px;          
+    background: #ffffff;    
+    display: flex;        
+    align-items: center;    
+    padding: 0 5%;          
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.ipl-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.ipl-table th {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5vw; 
+    font-weight: 900;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.ipl-table td {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 1.8vw; 
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-cell {
+    width: 8%;
+    text-align: right;
+}
+
+.logo-cell img {
+    height: 6vh; 
+    width: auto;
+}
+
+.team-name {
+    text-align: left;
+    width: 15%;
+    padding-left: 20px;
+    font-size: 2.2vw;
+}
+
+.pts-box {
+    background-color: #d32f2f;
+    color: white;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+    </Style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>POINTS TABLE</h1>
+    </div>
+
+    <div class="page-wrapper">
+        <table class="ipl-table">
+            <thead>
+                <tr>
+                    <th></th> <th>TEAM</th>
+                    <th>P</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>NRR</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="logo-cell"><img src="https://print-on-click.in/media/catalog/product/cache/f02f741f8d4d0d4e5ad9a7a333007557/r/o/royal_challengers_bengaluru_sticker_1.jpg" alt=""></td>
+                    <td class="team-name">RCB</td>
+                    <td>10</td><td>7</td><td>3</td><td>0.521</td>
+                    <td><div class="pts-box">14</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtbj632QnP0qYjkkT3fbICX6iUuJizowV6iQ&s" alt=""></td>
+                    <td class="team-name">MI</td>
+                    <td>10</td><td>6</td><td>4</td><td>0.889</td>
+                    <td><div class="pts-box">12</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://logowik.com/content/uploads/images/sunrisers-hyderabad5129.jpg" alt=""></td>
+                    <td class="team-name">SRH</td>
+                    <td>9</td><td>6</td><td>3</td><td>0.503</td>
+                    <td><div class="pts-box">12</div></td>
+                </tr>
+                 <tr>
+                    <td class="logo-cell"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7b4b5d80005305.5cd4462f4a056.jpg" alt=""></td>
+                    <td class="team-name">DC</td>
+                    <td>9</td><td>6</td><td>3</td><td>0.482</td>
+                    <td><div class="pts-box">12</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://i.pinimg.com/474x/2a/05/f9/2a05f90c408b90f0be8490f2c317a62c.jpg" alt=""></td>
+                    <td class="team-name">PBKS</td>
+                    <td>9</td><td>5</td><td>3</td><td>0.177</td>
+                    <td><div class="pts-box">11</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://1000logos.net/wp-content/uploads/2024/03/Lucknow-Super-Giants-Logo.jpg" alt=""></td>
+                    <td class="team-name">LSG</td>
+                    <td>10</td><td>5</td><td>5</td><td>-0.325</td>
+                    <td><div class="pts-box">10</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://1000logos.net/wp-content/uploads/2024/03/Kolkata-Knight-Riders-Logo.jpg" alt=""></td>
+                    <td class="team-name">KKR</td>
+                    <td>9</td><td>3</td><td>5</td><td>0.212</td>
+                    <td><div class="pts-box">7</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://i.pinimg.com/736x/74/a1/f6/74a1f6520043dea5a6daded687bdb1a4.jpg" alt=""></td>
+                    <td class="team-name">RR</td>
+                    <td>10</td><td>3</td><td>7</td><td>-0.349</td>
+                    <td><div class="pts-box">6</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://vectorseek.com/wp-content/uploads/2023/05/Gujarat-Titans-Logo-Vector.jpg" alt=""></td>
+                    <td class="team-name" >GT</td>
+                    <td>9</td><td>3</td><td>6</td><td>0.748</td>
+                    <td><div class="pts-box">6</div></td>
+                </tr>
+                <tr>
+                    <td class="logo-cell"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMx-aQvP_fuMtV-VJj1XUuFv2wcGRYWYaMA&s" alt=""></td>
+                    <td class="team-name">CSK</td>
+                    <td>9</td><td>2</td><td>7</td><td>-1.302</td>
+                    <td><div class="pts-box">4</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
